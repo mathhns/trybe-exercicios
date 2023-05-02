@@ -1,8 +1,11 @@
-let a = 10;
+let a = 11;
 let b = 22;
+let c = 33;
 //
-if (a > b) {
-  console.log('"a" é maior que "b".');
+if(a > b && a > c) {
+  console.log('Maior número: (a) ' + a);
+} else if(b > a && b > c) {
+  console.log('Maior número: (b) '+ b);
 } else {
-console.log('"b" é maior que "a".');
+  console.log('Maior número: (c) ' + c);
 }
