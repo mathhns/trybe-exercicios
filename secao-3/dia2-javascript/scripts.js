@@ -1,5 +1,4 @@
-let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
+let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+let menuServices = menu[1];
 
-for (let index = 0; index < groceryList.length; index++) {
-  console.log(groceryList[index]);
-}
+console.log(menuServices);
