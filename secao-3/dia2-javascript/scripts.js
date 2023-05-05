@@ -1,14 +1,10 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-let oddNumber = [];
+let smallestNumber = numbers[0];
 
-for (let index = 0; index < numbers.length; index += 1){
-  if(numbers[index] % 2 !== 0){
-    oddNumber.push(numbers[index]);
+for (let index = 1; index < numbers.length; index += 1){
+  if(numbers[index] < smallestNumber){
+    smallestNumber = numbers[index];
   }
 }
-if (oddNumber.length === 0){
-  console.log('Nenhum número ímpar encontrado');
-} else {
-  console.log(oddNumber.length);
-}
+console.log(smallestNumber);
