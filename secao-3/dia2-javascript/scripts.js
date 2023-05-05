@@ -1,7 +1,19 @@
-let word = 'banana';
-let reverseWord = '';
+let array = ['java', 'javascript', 'python', 'html', 'css'];
 
-for (let index = word.length -1; index >= 0; index -= 1){
-  reverseWord += word[index];
+let biggestWord = array[0];
+let smallestWord = array[0];
+
+for (let index = 1; index < array.length; index += 1) {
+  if (array[index].length > biggestWord.length) {
+    biggestWord = array[index];
+  }
 }
-console.log(reverseWord);
+
+for (let index = 1; index < array.length; index += 1) {
+  if (array[index].length < smallestWord.length) {
+    smallestWord = array[index];
+  }
+}
+
+console.log(biggestWord);
+console.log(smallestWord);
