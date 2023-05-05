@@ -1,10 +1,7 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let word = 'banana';
+let reverseWord = '';
 
-let smallestNumber = numbers[0];
-
-for (let index = 1; index < numbers.length; index += 1){
-  if(numbers[index] < smallestNumber){
-    smallestNumber = numbers[index];
-  }
+for (let index = word.length -1; index >= 0; index -= 1){
+  reverseWord += word[index];
 }
-console.log(smallestNumber);
+console.log(reverseWord);
