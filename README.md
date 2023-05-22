@@ -1,4 +1,4 @@
-# Olá, eu me chamo Matheus! 👋
+# Olá, me chamo Matheus! 👋
 Pessoa estudante na Trybe!
 
 # Módulo: Fundamentos
