@@ -35,7 +35,10 @@ const showPromo = (name, number) => {
     secondText.innerHTML = `A promoção do dia é: ${productObject.product} no valor de R$ ${productObject.price}`;
   } catch(error) {
     secondText.innerHTML = error.message;
-  }
+  } finally {
+    document.querySelector('#name-id').value = "";
+    document.querySelector('#number-id').value = "";
+   } 
 };
 
 const checkName = (name) => {
