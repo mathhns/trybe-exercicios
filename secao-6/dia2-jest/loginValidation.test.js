@@ -6,7 +6,7 @@ const {
 
 describe('a função verifyCredentials()', () => {
   const user = {
-    userName: 'Bob',
+    userName: 'Joana',
     password: 123456,
   };
 
