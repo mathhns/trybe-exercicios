@@ -1,16 +1,9 @@
-const newEmployees = () => {
-  const employees = {
-    id1: employeeGenerator('Pedro Guerra'), 
-    id2: employeeGenerator('Luiza Drumond'), 
-    id3: employeeGenerator('Carla Paiva'), 
-  }
-  return employees;
+const numberChecker = (myNumber, number) => myNumber === number;
+
+const lotteryResult = (myNumber, callback) => {
+  const number = Math.floor((Math.random() * 5) + 1);
+
+  return callback(myNumber, number) ? 'Lucky day, you won!' : 'Try Again!';
 };
 
-const employeeGenerator = (fullName) => {
-  const email = fullName.toLowerCase().replace(' ', '_');
-
-  return { fullName, email: `${email}@trybe.com` };
-};
-
-console.log(newEmployees());
+console.log(lotteryResult(2, numberChecker)); 
