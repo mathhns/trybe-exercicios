@@ -1,10 +1,16 @@
-const emailListInData = [
-  'roberta@email.com',
-  'paulo@email.com',
-  'anaroberta@email.com',
-  'fabiano@email.com',
-];
+const newEmployees = () => {
+  const employees = {
+    id1: employeeGenerator('Pedro Guerra'), 
+    id2: employeeGenerator('Luiza Drumond'), 
+    id3: employeeGenerator('Carla Paiva'), 
+  }
+  return employees;
+};
 
-emailListInData.forEach((email) => {
-  console.log(`O email ${email} está cadastrado em nosso banco de dados!`);
-})
+const employeeGenerator = (fullName) => {
+  const email = fullName.toLowerCase().replace(' ', '_');
+
+  return { fullName, email: `${email}@trybe.com` };
+};
+
+console.log(newEmployees());
